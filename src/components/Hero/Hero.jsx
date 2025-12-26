@@ -68,13 +68,8 @@ const Hero = () => {
                 animate="animate"
                 className="text-xl leading-snug"
               >
-                Architecte des données et créateur de sens, je suis un passionné
-                de la Data Science animé par la quête de vérité à travers les chiffres.
-                À la croisée de l’analyse, de la visualisation et de l’IA, je transforme
-                des données brutes en décisions éclairées. Curieux, rigoureux et créatif,
-                je conçois des solutions intelligentes qui donnent vie aux données et impactent
-                le réel. Mon ambition ? Extraire la valeur cachée et façonner un monde guidé
-                par l’insight.
+                Architecte et constructeur de données, je transforme des flux bruts en informations fiables et exploitables.
+Passionné par les pipelines, l’ETL et l’optimisation des données, je conçois des solutions robustes qui permettent aux équipes d’analyse et aux décideurs de prendre des décisions éclairées. Curieux, rigoureux et pragmatique, je crée des infrastructures data fiables pour donner vie aux projets et maximiser l’impact business.
               </motion.p>
 
               {/* Bouton En savoir plus */}

@@ -24,8 +24,8 @@ const Banner = () => {
             {/* Banner Info  */}
             <div className='flex flex-col justify-center'>
                 <div className='text-left space-y-7 lg:max-w-[400px]'>
-                    <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Je suis un Data Scientist & Analyst</motion.h1>
-                    <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70'>Curieux et rigoureux, je transforme les données en leviers de décision stratégique. De la collecte à la visualisation, j’exploite la puissance des algorithmes et de l’analyse statistique pour révéler des insights clairs, concrets et à fort impact. Mon objectif : faire parler les données pour éclairer l’avenir.</motion.p>
+                    <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Je suis Data Engineer Junior</motion.h1>
+                    <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70'>Curieux et rigoureux, je construis des pipelines et des infrastructures de données fiables, transformant les flux bruts en informations structurées et exploitables. De la collecte à la préparation, je rends les données prêtes pour l’analyse et la prise de décision, afin de maximiser l’impact des projets et soutenir les équipes business.</motion.p>
                     <div className='flex items-center gap-4'>
                         <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className='btn text-xs py-3 md:text-base'>En savoir plus</motion.button>
                         <a href="./cv.pdf">

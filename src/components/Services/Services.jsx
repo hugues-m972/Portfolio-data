@@ -24,20 +24,22 @@ const ServicesData = [
     delay: 1.2,
     },
     {
-        id: 2,
-    title: "Data Analysis & Business Insights",
-    icon: <IoFolderOpen className="text-3xl" />,
-    link: "/services",
-    desc: "Collecter, nettoyer et analyser les données afin d’extraire des insights exploitables. Création de tableaux de bord interactifs, automatisation des rapports et aide à la prise de décision grâce à des analyses statistiques et des visualisations avancées.",
-    delay: 1.4,
+       id: 2,
+title: "Data Engineering & Business Support",
+icon: <IoFolderOpen className="text-3xl" />,
+link: "/services",
+desc: "Collecte, transformation et structuration des données pour les rendre fiables et facilement exploitables. Mise en place de pipelines et d’automatisations permettant aux équipes business et analystes de créer des tableaux de bord et de prendre des décisions éclairées rapidement.",
+delay: 1.4,
+
     },
     {
-        id: 3,
-    title: "Data Science & Machine Learning",
-    icon: <RiComputerFill className="text-3xl" />,
-    link: "/services",
-    desc: "Développer des modèles prédictifs et des solutions intelligentes grâce au Machine Learning et au traitement de données. Automatisation de processus, détection de tendances, classification, prédiction et création d’outils data-driven pour aider les entreprises à prendre des décisions plus rapides et plus fiables.",
-    delay: 1.6,
+    id: 3,
+title: "Data Engineering & Pipelines",
+icon: <RiComputerFill className="text-3xl" />,
+link: "/services",
+desc: "Conception et optimisation de pipelines de données robustes et fiables. Transformation, nettoyage et structuration des données pour les rendre exploitables par les équipes business et les analystes. Mise en place de solutions data-driven permettant aux entreprises de prendre des décisions rapides et éclairées.",
+delay: 1.6,
+
     },
     {
         id: 4,
@@ -74,7 +76,7 @@ const Services = () => {
                 <div className='flex flex-col justify-center'>
                     <div className='text-left space-y-7 lg:max-w-[400px]'>
                         <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Services</motion.h1>
-                        <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70 text-xl'>Je développe des solutions web et des outils analytiques intégrant des modèles de Machine Learning et des pipelines de données optimisés, permettant de transformer les données brutes en insights exploitables et en applications intelligentes adaptées aux besoins des entreprises</motion.p>
+                        <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70 text-xl'>Je développe des pipelines de données et des solutions robustes permettant de transformer les données brutes en informations fiables et exploitables, optimisant ainsi les flux de données et les applications business pour répondre aux besoins réels des entreprises</motion.p>
                         <div className='flex items-center gap-4'>
                             <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className=' text-primary rounded font-bold px-5  !bg-white text-xs py-3 md:text-base hover:red-shadow'>En savoir plus</motion.button>
                            
