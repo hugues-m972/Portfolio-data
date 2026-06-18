@@ -52,7 +52,7 @@ const Hero = () => {
                 animate="animate"
                 className="text-4xl"
               >
-                Hello, Je suis
+                Hello, I am
               </motion.p>
               <motion.p
                 variants={slideUp(0.5)}
@@ -68,8 +68,9 @@ const Hero = () => {
                 animate="animate"
                 className="text-xl leading-snug"
               >
-                Architecte et constructeur de données, je transforme des flux bruts en informations fiables et exploitables.
-Passionné par les pipelines, l’ETL et l’optimisation des données, je conçois des solutions robustes qui permettent aux équipes d’analyse et aux décideurs de prendre des décisions éclairées. Curieux, rigoureux et pragmatique, je crée des infrastructures data fiables pour donner vie aux projets et maximiser l’impact business.
+                Aspiring Software Engineer passionate about building scalable, reliable and efficient digital solutions.
+                Skilled in Python, Java, JavaScript, SQL, Docker and Git, I turn complex problems into clean, maintainable software.
+                Driven by quality, continuous learning and real-world impact.
               </motion.p>
 
               {/* Bouton En savoir plus */}
@@ -80,7 +81,7 @@ Passionné par les pipelines, l’ETL et l’optimisation des données, je conç
                 className="btn"
                 onClick={handleScrollToServices}
               >
-                En savoir plus
+                Discover my work
               </motion.button>
 
               {/* Stats Section */}
@@ -94,7 +95,7 @@ Passionné par les pipelines, l’ETL et l’optimisation des données, je conç
                   <p className="text-2xl font-bold">
                     <CountUp end={3} start={0} suffix="+" delay={1.4} />
                   </p>
-                  <p className="text-xl">Experience</p>
+                  <p className="text-xl">Years Learning</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-2xl font-bold">

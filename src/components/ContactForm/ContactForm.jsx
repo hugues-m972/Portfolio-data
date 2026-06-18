@@ -30,26 +30,21 @@ const ContactForm = () => {
         setStatusMessage("");
 
         emailjs.sendForm(
-            "service_02x1t1a",   // Service ID
-            "template_ct3labw", // Template ID
-            e.target,           // Formulaire
-            "5sd2mC2x1rLGtdCgL" // Public key
+            "service_02x1t1a",
+            "template_ct3labw",
+            e.target,
+            "5sd2mC2x1rLGtdCgL"
         ).then(
             () => {
                 setStatusMessage("✅ Message envoyé avec succès !");
                 setLoading(false);
+                setFormData({ name: "", email: "", message: "" });
             },
             () => {
                 setStatusMessage("❌ Une erreur est survenue. Réessayez plus tard.");
                 setLoading(false);
             }
         );
-
-        setFormData({
-            name: "",
-            email: "",
-            message: "",
-        });
     };
 
     return (

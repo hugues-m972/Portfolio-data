@@ -10,114 +10,88 @@ import Project5 from "../../assets/todolist.png";
 import Project6 from "../../assets/dat.png";
 import Project7 from "../../assets/caurispay.png";
 
-
-
 import Link from 'next/link';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// Données des projets
 const ProjetsData = [
     {
-        id:1,
-        title :"Techstore-Template",
-        link: "#",
-        desc : "Conception d’une interface moderne et réactive dédiée à la vente d’AirPods, mettant en avant les différents modèles, leurs caractéristiques techniques, ainsi que les offres promotionnelles en cours. Le site est conçu pour offrir une expérience utilisateur fluide et intuitive, facilitant la navigation entre les produits, la comparaison des modèles et la gestion du panier. Il combine un design épuré et attractif à des fonctionnalités performantes telles que le paiement en ligne sécurisé, le suivi des commandes et la gestion du compte client.",
-        delay : 1.2,
-        img : Project1,
-        lien1:"https://vente-airpods.web.app/",
-        lien2:"https://github.com/MEDEGNON199"
-
+        id: 1,
+        title: "Techstore — E-Commerce Web App",
+        desc: "A modern, responsive e-commerce web application built for selling tech products (AirPods). Features include product browsing, cart management, secure online payment, order tracking and customer account management. Built with a clean UI/UX focus and optimized for performance.",
+        delay: 1.2,
+        img: Project1,
+        lien1: "https://vente-airpods.web.app/",
+        lien2: "https://github.com/MEDEGNON199"
     },
-  
     {
-        id:2,
-        title :"rapport Analyse cardiarque",
-        link: "#",
-        desc : "Rapport et structuration d’un dataset médical dédié aux maladies cardiaques, mettant en avant les données cliniques essentielles telles que les antécédents des patients, les paramètres biologiques, les examens cardiologiques et les facteurs de risque. Le dataset est conçu pour garantir une exploitation optimale des données, facilitant l’analyse, la recherche médicale et le développement de modèles de prédiction. Il allie une organisation rigoureuse des informations à des exigences strictes en matière de confidentialité, de sécurité et de conformité aux normes de protection des données de santé.",
-        delay : 1.6,
-        img : Project2,
+        id: 2,
+        title: "Heart Disease — Data Analysis App",
+        desc: "A data analysis project focused on a medical dataset for cardiac diseases. Includes data cleaning, preprocessing, exploratory analysis and visualization of key clinical features. Demonstrates skills in Python, Pandas and data-driven problem solving.",
+        delay: 1.6,
+        img: Project2,
         lien1: "https://github.com/MEDEGNON199/Analysecardiaque.git",
-        lien2:"https://github.com/MEDEGNON199/Analysecardiaque.git"
-    },
-
-
-    {
-        id:3,
-        title :"Rapport financier",
-        link: "#",
-        desc : "Ce tableau de bord interactif présente un résumé exécutif des performances financières, incluant l'évolution du profit mensuel, les zones géographiques les plus rentables, et une analyse des ventes par produit et segment de marché. Il a été conçu avec Power BI pour offrir une visualisation claire et stratégique des données, facilitant la prise de décision en entreprise",
-        delay : 2,
-        img : Project3,
-        lien1:"https://github.com/MEDEGNON199/Rapport-financier.git",
-        lien2:"https://github.com/MEDEGNON199/Rapport-financier.git"
-
-        
+        lien2: "https://github.com/MEDEGNON199/Analysecardiaque.git"
     },
     {
-        id:4,
-        title :"Dashboard Clients",
-        link: "#",
-        desc : "Ce tableau de bord fournit des insights clés sur nos clients, en identifiant les segments les plus performants et leurs comportements d’achat. Il met en évidence les catégories les plus génératrices de ventes, les régions où se concentrent nos clients, ainsi que les facteurs influençant positivement le chiffre d’affaires — notamment la performance du marché APAC. Conçu avec Power BI, cet outil permet d’orienter les actions commerciales et marketing de manière ciblée.",
-        delay : 2,
-        img : Project4,
-        lien1:"https://register-seven-delta.vercel.app/",
-        lien2:"https://github.com/hippolite-oss"
-
-        
+        id: 3,
+        title: "Financial Dashboard — Power BI",
+        desc: "An interactive business intelligence dashboard presenting executive-level financial KPIs — monthly profit trends, top geographic markets, product performance and revenue by segment. Designed to support data-driven business decisions.",
+        delay: 2,
+        img: Project3,
+        lien1: "https://github.com/MEDEGNON199/Rapport-financier.git",
+        lien2: "https://github.com/MEDEGNON199/Rapport-financier.git"
     },
     {
-        id:5,
-        title :"Todolist",
-        link: "#",
-        desc : "Ce projet est une application To-Do List réalisée en HTML, CSS et JavaScript. Elle permet à l’utilisateur d’ajouter, de marquer comme terminées et de supprimer des tâches de manière simple et intuitive. L’interface est épurée et responsive, offrant une expérience utilisateur fluide aussi bien sur ordinateur que sur mobile.",
-        delay : 2,
-        img : Project5,
-        lien1:"https://todolist-indol-one-31.vercel.app/",
-        lien2:"https://github.com/hippolite-oss"
-
-        
+        id: 4,
+        title: "Customer Dashboard — Business Intelligence",
+        desc: "A business analytics dashboard providing insights on customer segmentation, purchase behavior and revenue drivers. Highlights top-performing product categories and regional market trends (APAC). Built with Power BI for strategic commercial decision-making.",
+        delay: 2,
+        img: Project4,
+        lien1: "https://register-seven-delta.vercel.app/",
+        lien2: "https://github.com/hippolite-oss"
     },
     {
-        id:6,
-        title :"UATM-GASA",
-        link: "#",
-        desc : "Le site dynamique de l’UATM-GASA est une plateforme moderne et interactive conçue pour offrir aux étudiants, enseignants, chercheurs et partenaires un accès simplifié à toutes les informations essentielles de l’université.",
-        delay : 2,
-        img : Project6,
-        lien1:"https://gasasite.vercel.app/index.html",
-        lien2:"https://github.com/hippolite-oss"
-
-        
+        id: 5,
+        title: "Todo List — Vanilla JS App",
+        desc: "A clean, fully responsive task management application built with HTML, CSS and JavaScript. Supports adding, completing and deleting tasks with a smooth user experience. A solid demonstration of DOM manipulation, event handling and front-end fundamentals.",
+        delay: 2,
+        img: Project5,
+        lien1: "https://todolist-indol-one-31.vercel.app/",
+        lien2: "https://github.com/hippolite-oss"
     },
     {
-        id:7,
-        title :"CaurisPay",
-        link: "#",
-        desc : "Création d'une plateforme financière moderne et intuitive pour CaurisPay, centralisant les services de paiement, transfert d'argent et paiement de factures. Conçue pour une expérience utilisateur fluide et sécurisée, elle combine un design épuré à des fonctionnalités robustes comme le portefeuille électronique et le suivi des transactions. L'interface responsive garantit une gestion simplifiée des finances depuis mobile ou ordinateur.",
-        delay : 2,
-        img : Project7,
-        lien1:"https://cauris-pay-sooty.vercel.app/",
-        lien2:"https://github.com/hippolite-oss"
-
-        
+        id: 6,
+        title: "UATM-GASA — University Web Platform",
+        desc: "A dynamic and modern website for the UATM-GASA university, designed to give students, faculty, researchers and partners easy access to key institutional information. Built with a focus on usability, accessibility and clean design.",
+        delay: 2,
+        img: Project6,
+        lien1: "https://gasasite.vercel.app/index.html",
+        lien2: "https://github.com/hippolite-oss"
+    },
+    {
+        id: 7,
+        title: "CaurisPay — Fintech Web Platform",
+        desc: "A modern fintech platform centralizing payment services, money transfers and bill payments. Features an e-wallet, secure transaction tracking and a fully responsive interface. Built with a focus on UX, security and reliable financial workflows.",
+        delay: 2,
+        img: Project7,
+        lien1: "https://cauris-pay-sooty.vercel.app/",
+        lien2: "https://github.com/hippolite-oss"
     },
 ]
 
-
-// Configuration du slider avec autoplay activé
 const sliderSettings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true, // Permet le défilement automatique
-    autoplaySpeed: 3000, // Délai entre chaque défilement (en millisecondes)
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
         {
-            breakpoint: 768, // Pour les mobiles
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
             }
@@ -144,7 +118,7 @@ const Projects = () => {
                     {ProjetsData.map((project) => (
                         <motion.div 
                             key={project.id} 
-                            whileHover={{ scale: 1.05 }} // Ombre au survol
+                            whileHover={{ scale: 1.05 }}
                             className="p-6 group"
                         >
                             <div className="bg-black hover:red-shadow border-2 border-primary/80 p-4 rounded-xl space-y-5 transition-all duration-300 transform">
@@ -154,11 +128,11 @@ const Projects = () => {
                                     <p className='text-sm line-clamp-5'>{project.desc}</p>
                                 </div>
                                 <div className='hidden group-hover:flex justify-around items-center duration-300'>
-                                    <Link href={project.lien1} target="_blank" >
-                                        <button className='border-2 border-white py-2 rounded-lg px-4'target='blilnk'>Live</button>
+                                    <Link href={project.lien1} target="_blank">
+                                        <button className='border-2 border-white py-2 rounded-lg px-4'>Live</button>
                                     </Link>
-                                    <Link href={project.lien2} target="_blank" >
-                                        <button className='btn'>Voir le Code</button>
+                                    <Link href={project.lien2} target="_blank">
+                                        <button className='btn'>View Code</button>
                                     </Link>
                                 </div>
                             </div>

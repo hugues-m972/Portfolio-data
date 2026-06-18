@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Medegnon Hugues",
-  description: "Une vitrine personnelle qui met en avant mes compétences, mon expérience et mes réalisations dans un format visuel et interactif, reflétant ma créativité et mon professionnalisme",
+  title: "Hugues Medegnon — Software Engineer",
+  description: "Aspiring Software Engineer — Building scalable, reliable and efficient digital solutions with Python, Java, JavaScript, Docker and Git.",
 };
 
 export default function RootLayout({ children }) {

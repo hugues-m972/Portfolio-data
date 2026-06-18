@@ -44,7 +44,7 @@ const Navbar = () => {
       animate={{ opacity: 1 }} 
       transition={{ duration: 0.5 }}
     >
-      <div className="container flex items-center justify-between py-5 relative">
+      <div className="container flex items-center justify-between py-5 relative menu-container">
         {/* Logo section */}
         <div>
           <Link href="/">
@@ -72,20 +72,21 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <button className="btn">
-              <a href="./cv_hugues.pdf">Get Resume</a>
-            </button>
+            <a href="/cv_hugues.pdf" className="btn">
+              Get Resume
+            </a>
+
           </ul>
         </div>
 
         {/* Mobile menu section */}
-        <div className="md:hidden">
-          <MdMenu className="text-4xl" onClick={toggleMenu} />
+        <div className="md:hidden menu-container">
+          <MdMenu className="text-4xl cursor-pointer" onClick={toggleMenu} />
         </div>
       </div>
 
       {/* Mobile sidebar menu */}
-      <ResponsiveMenu showMenu={showMenu} />
+      <ResponsiveMenu showMenu={showMenu} closeMenu={closeMenu} />
     </motion.nav>
   );
 };

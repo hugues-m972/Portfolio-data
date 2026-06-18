@@ -24,14 +24,18 @@ const Banner = () => {
             {/* Banner Info  */}
             <div className='flex flex-col justify-center'>
                 <div className='text-left space-y-7 lg:max-w-[400px]'>
-                    <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Je suis Data Engineer Junior</motion.h1>
-                    <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70'>Curieux et rigoureux, je construis des pipelines et des infrastructures de données fiables, transformant les flux bruts en informations structurées et exploitables. De la collecte à la préparation, je rends les données prêtes pour l’analyse et la prise de décision, afin de maximiser l’impact des projets et soutenir les équipes business.</motion.p>
+                    <motion.h1 variants={slideUp(0.3)} initial="initial" animate="animate" className='text-3xl lg:text-4xl font-bold'>Software Engineer — Junior</motion.h1>
+                    <motion.p variants={slideUp(0.5)} initial="initial" animate="animate" className='text-white/70'>
+                      Fresh graduate in Information Systems and Software (SIL), I am passionate about designing and developing robust software solutions.
+                      I enjoy transforming complex problems into performant applications using modern technologies such as Python, Java, JavaScript, SQL, Docker and Git.
+                      My goal is to contribute to building reliable, scalable and high-impact software — following best practices, clean code principles and agile methodologies.
+                    </motion.p>
                     <div className='flex items-center gap-4'>
-                        <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className='btn text-xs py-3 md:text-base'>En savoir plus</motion.button>
-                        <a href="./cv.pdf">
+                        <motion.button variants={slideUp(0.7)} initial="initial" animate="animate" className='btn text-xs py-3 md:text-base'>Discover my work</motion.button>
+                        <a href="./cv_hugues.pdf">
                         <motion.button variants={slideUp(0.9)} initial="initial" animate="animate" className='border border-white/50 rounded-lg px-4  text-xs md:text-base flex items-center gap-2 py-3  '>
                             <FiDownload/>
-                            Télecharger CV
+                            Download Resume
                         </motion.button>
                         </a>
                     </div>
